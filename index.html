@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gable House Theory · Interior Design & Architecture Journal</title>
+  <meta name="description" content="Gable House Theory — an independent editorial publication exploring interior design, architecture, materials, space planning, lighting, and modern living. Long-form articles for design thinkers.">
+  <meta name="author" content="Gable House Theory">
+  <link rel="canonical" href="https://www.gablehousetheory.com/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gable House Theory · Interior Design & Architecture Journal">
+  <meta property="og:description" content="Independent editorial on interior design, architecture, materials, and the art of living well.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.gablehousetheory.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Gable House Theory",
+    "description": "An independent interior design and architecture publication.",
+    "url": "https://www.gablehousetheory.com/",
+    "author": {
+      "@type": "Organization",
+      "name": "Gable House Theory"
+    }
+  }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --bg-page: #faf9f7;
+      --bg-card: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #4a4a4a;
+      --text-muted: #737373;
+      --border-light: #e8e6e3;
+      --border-medium: #d6d3d0;
+      --accent: #9b7b5c;
+      --accent-soft: #f0ebe6;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.04);
+      --max-width: 1280px;
+      --content-width: 780px;
+      --gutter: 24px;
+      --radius: 4px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: #1a1a1a;
+    }
+
+    h1 { font-size: 2.6rem; font-weight: 600; }
+    h2 { font-size: 2rem; margin-bottom: 1.25rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    h4 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+
+    p {
+      margin-bottom: 1.4rem;
+      color: var(--text-secondary);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---------- UTILITY ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-light);
+      padding: 0.75rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1a1a1a;
+      display: flex;
+      align-items: baseline;
+      gap: 0.1rem;
+    }
+
+    .logo span {
+      font-size: 0.65rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-left: 0.3rem;
+      font-family: var(--font-sans);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--text-secondary);
+    }
+
+    .nav-links a {
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    .header-search {
+      position: relative;
+      min-width: 220px;
+    }
+
+    .header-search input {
+      width: 100%;
+      padding: 0.55rem 1rem 0.55rem 2.2rem;
+      border: 1px solid var(--border-medium);
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      background: var(--bg-page);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .header-search input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(155, 123, 92, 0.08);
+    }
+
+    .header-search::before {
+      content: "⌕";
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1rem;
+      pointer-events: none;
+    }
+
+    /* ---------- MAIN LAYOUT ---------- */
+    .site-main {
+      padding: 2.5rem 0 3rem;
+    }
+
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ---------- HERO / FEATURED ---------- */
+    .featured-article {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      margin-bottom: 3rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .featured-article:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .featured-article img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .featured-content {
+      padding: 2rem 2.2rem 2.2rem;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+      font-family: var(--font-sans);
+    }
+
+    .featured-article h2 {
+      font-size: 2.2rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+
+    .featured-article .meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .featured-article .excerpt {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 90%;
+    }
+
+    /* ---------- CATEGORY FILTER ---------- */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2.2rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .filter-btn {
+      background: transparent;
+      border: 1px solid var(--border-medium);
+      padding: 0.45rem 1.1rem;
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .filter-btn:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    /* ---------- ARTICLE GRID ---------- */
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      font-family: var(--font-sans);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .section-label::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border-light);
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem 1.8rem;
+      margin-bottom: 3rem;
+    }
+
+    .article-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: box-shadow 0.2s, border-color 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .article-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-medium);
+    }
+
+    .article-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .card-content {
+      padding: 1.3rem 1.4rem 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-content .category-tag {
+      font-size: 0.65rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .card-content .meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      margin-bottom: 0;
+      flex: 1;
+    }
+
+    /* ---------- SIDEBAR ---------- */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .sidebar-widget {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 1.6rem 1.5rem;
+    }
+
+    .sidebar-widget h4 {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .popular-list {
+      list-style: none;
+    }
+
+    .popular-list li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .popular-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .popular-list .index-num {
+      display: inline-block;
+      width: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 0.8rem;
+    }
+
+    .popular-list a {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .popular-list a:hover {
+      color: var(--text-primary);
+    }
+
+    .about-editor p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .about-editor .editor-name {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 0.5rem;
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq-section {
+      margin: 3rem 0;
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem 3rem;
+    }
+
+    @media (max-width: 700px) {
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 1.2rem;
+    }
+
+    .faq-question {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-question::after {
+      content: "+";
+      font-size: 1.3rem;
+      color: var(--accent);
+      font-weight: 300;
+      transition: transform 0.2s;
+    }
+
+    .faq-item.open .faq-question::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.2s;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+      padding-top: 0.4rem;
+    }
+
+    /* ---------- NEWSLETTER ---------- */
+    .newsletter {
+      background: var(--accent-soft);
+      border-radius: var(--radius);
+      padding: 2.5rem 2.2rem;
+      margin: 3rem 0;
+      text-align: center;
+    }
+
+    .newsletter h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .newsletter p {
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-form input {
+      padding: 0.75rem 1.2rem;
+      border: 1px solid var(--border-medium);
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      width: 280px;
+      background: white;
+    }
+
+    .newsletter-form input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.8rem;
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .btn:hover {
+      background: #7a5e44;
+    }
+
+    /* ---------- EDITORIAL FOOTER ---------- */
+    .site-footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-light);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      margin-top: 0.75rem;
+    }
+
+    .footer-col h4 {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-light);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 900px) {
+      h1 { font-size: 2rem; }
+      .featured-article h2 { font-size: 1.8rem; }
+      .featured-article img { height: 280px; }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+      .header-search {
+        min-width: 100%;
+      }
+      .featured-content {
+        padding: 1.5rem;
+      }
+      .featured-article h2 { font-size: 1.5rem; }
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ---------- MISC ---------- */
+    .hidden {
+      display: none !important;
+    }
+
+    .no-results {
+      padding: 3rem 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Gable House Theory home">
+        Gable House Theory <span>Journal</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="site-main">
+    <div class="container layout-grid">
+
+      <!-- PRIMARY CONTENT -->
+      <div class="primary-content">
+
+        <!-- FEATURED -->
+        <article class="featured-article" id="featured">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Modern living room with large windows, neutral tones, and a sculptural floor lamp">
+          <div class="featured-content">
+            <span class="category-tag">Interior Design</span>
+            <h2><a href="#">The Quiet Power of Negative Space in Modern Interiors</a></h2>
+            <div class="meta">By Elena Marsh · March 12, 2025 · 12 min read</div>
+            <p class="excerpt">We explore how emptiness, light, and restraint shape the most enduring interiors — and why the best designers know when to stop adding.</p>
+          </div>
+        </article>
+
+        <!-- CATEGORY FILTER -->
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="interiors">Interiors</button>
+          <button class="filter-btn" data-category="architecture">Architecture</button>
+          <button class="filter-btn" data-category="materials">Materials</button>
+          <button class="filter-btn" data-category="lighting">Lighting</button>
+          <button class="filter-btn" data-category="furniture">Furniture</button>
+          <button class="filter-btn" data-category="guides">Guides</button>
+          <button class="filter-btn" data-category="sustainable">Sustainable</button>
+        </div>
+
+        <!-- LATEST ARTICLES -->
+        <div class="section-label">Latest Articles</div>
+        <div class="article-grid" id="articleGrid">
+
+          <!-- CARD 1 -->
+          <article class="article-card" data-category="interiors">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop" alt="Minimalist bedroom with a low platform bed and linen bedding">
+            <div class="card-content">
+              <span class="category-tag">Interiors</span>
+              <h3><a href="#">The Bedroom as Sanctuary: Designing for Rest</a></h3>
+              <div class="meta">March 10, 2025 · 8 min read</div>
+              <p>How acoustics, color temperature, and tactile materials create a restorative sleep environment.</p>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="article-card" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop" alt="Modern house facade with large glass panels and warm wood cladding">
+            <div class="card-content">
+              <span class="category-tag">Architecture</span>
+              <h3><a href="#">Facade as Filter: Rethinking Street Presence</a></h3>
+              <div class="meta">March 8, 2025 · 10 min read</div>
+              <p>From brise-soleil to deep reveals — how contemporary facades balance privacy, light, and identity.</p>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="article-card" data-category="materials">
+            <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=800&auto=format&fit=crop" alt="Close-up of travertine stone surface with natural veining">
+            <div class="card-content">
+              <span class="category-tag">Materials</span>
+              <h3><a href="#">Travertine, Reconsidered: A Stone for Modern Interiors</a></h3>
+              <div class="meta">March 5, 2025 · 7 min read</div>
+              <p>Why this ancient material is finding new life in contemporary kitchens, bathrooms, and living spaces.</p>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="article-card" data-category="lighting">
+            <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=800&auto=format&fit=crop" alt="Warm pendant lights hanging over a wooden dining table">
+            <div class="card-content">
+              <span class="category-tag">Lighting</span>
+              <h3><a href="#">Layered Lighting: A Room-by-Room Guide</a></h3>
+              <div class="meta">March 3, 2025 · 11 min read</div>
+              <p>Ambient, task, and accent — how to combine layers for comfort and drama without over-lighting.</p>
+            </div>
+          </article>
+
+          <!-- CARD 5 -->
+          <article class="article-card" data-category="furniture">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=800&auto=format&fit=crop" alt="Mid-century modern sofa with textured throw pillows">
+            <div class="card-content">
+              <span class="category-tag">Furniture</span>
+              <h3><a href="#">The Case for Fewer, Better Pieces</a></h3>
+              <div class="meta">February 28, 2025 · 9 min read</div>
+              <p>Investing in timeless furniture: how to choose pieces that age gracefully and support daily life.</p>
+            </div>
+          </article>
+
+          <!-- CARD 6 -->
+          <article class="article-card" data-category="guides">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop" alt="Open-plan kitchen and living area with island seating">
+            <div class="card-content">
+              <span class="category-tag">Guides</span>
+              <h3><a href="#">Small Space, Big Ideas: A Practical Guide</a></h3>
+              <div class="meta">February 25, 2025 · 14 min read</div>
+              <p>Storage, sightlines, and multi-functional design — how to make compact homes feel generous.</p>
+            </div>
+          </article>
+
+          <!-- CARD 7 -->
+          <article class="article-card" data-category="sustainable">
+            <img src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?q=80&w=800&auto=format&fit=crop" alt="Passive house with green roof and natural ventilation">
+            <div class="card-content">
+              <span class="category-tag">Sustainable</span>
+              <h3><a href="#">Passive Design Principles for Real Homes</a></h3>
+              <div class="meta">February 22, 2025 · 10 min read</div>
+              <p>Orientation, thermal mass, and shading — low-tech strategies that reduce energy demand.</p>
+            </div>
+          </article>
+
+          <!-- CARD 8 -->
+          <article class="article-card" data-category="interiors">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=800&auto=format&fit=crop" alt="Detail of a modern kitchen with concrete countertops and brass fixtures">
+            <div class="card-content">
+              <span class="category-tag">Interiors</span>
+              <h3><a href="#">Kitchen Materials That Age Beautifully</a></h3>
+              <div class="meta">February 20, 2025 · 8 min read</div>
+              <p>From soapstone to unlacquered brass — choosing surfaces that develop character over time.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- POPULAR ARTICLES (mobile / secondary) -->
+        <div class="section-label" style="margin-top: 2rem;">Popular This Month</div>
+        <div class="article-grid" id="popularGrid">
+          <article class="article-card" data-category="architecture">
+            <div class="card-content">
+              <span class="category-tag">Architecture</span>
+              <h3><a href="#">The Return of the Courtyard House</a></h3>
+              <div class="meta">February 18, 2025 · 9 min read</div>
+              <p>Privacy, light, and cross-ventilation — why the courtyard is back in contemporary residential design.</p>
+            </div>
+          </article>
+          <article class="article-card" data-category="materials">
+            <div class="card-content">
+              <span class="category-tag">Materials</span>
+              <h3><a href="#">Lime Plaster: Walls That Breathe</a></h3>
+              <div class="meta">February 15, 2025 · 6 min read</div>
+              <p>Understanding the appeal of natural finishes for healthier, more tactile interiors.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- FAQ SECTION -->
+        <section class="faq-section" id="faq">
+          <h2 style="font-size: 1.8rem; margin-bottom: 2rem;">Frequently Asked Questions</h2>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <div class="faq-question">What makes a design timeless?</div>
+              <div class="faq-answer">Timeless design prioritises proportion, natural materials, and restraint. It avoids trends that date quickly and instead focuses on quality, light, and how a space feels to inhabit over decades.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">How do I start planning a renovation?</div>
+              <div class="faq-answer">Begin with a clear brief: how you want to live in the space, your budget, and your must-haves. Then work with an architect or designer to test layouts before committing to finishes.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">What is the best lighting for a living room?</div>
+              <div class="faq-answer">Layer your lighting: ambient (ceiling or floor), task (reading), and accent (art or architectural features). Dimmers and warm colour temperatures (2700K–3000K) create flexibility and comfort.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">Are sustainable materials more expensive?</div>
+              <div class="faq-answer">Not always. Some, like reclaimed timber or lime plaster, can be cost-competitive. Others may carry a premium, but their durability and lower environmental impact often justify the investment.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <div class="newsletter">
+          <h3>The Gable House Theory Newsletter</h3>
+          <p>Get our weekly digest of new articles, design insights, and reading recommendations — no noise, just substance.</p>
+          <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Thank you for subscribing. (Demo only)');">
+            <input type="email" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-label="Sidebar">
+        <div class="sidebar-widget">
+          <h4>Most Read</h4>
+          <ul class="popular-list">
+            <li><span class="index-num">01</span> <a href="#">The Quiet Power of Negative Space</a></li>
+            <li><span class="index-num">02</span> <a href="#">Facade as Filter: Rethinking Street Presence</a></li>
+            <li><span class="index-num">03</span> <a href="#">Layered Lighting: A Room-by-Room Guide</a></li>
+            <li><span class="index-num">04</span> <a href="#">Small Space, Big Ideas: A Practical Guide</a></li>
+            <li><span class="index-num">05</span> <a href="#">Travertine, Reconsidered</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget about-editor">
+          <h4>About the Editor</h4>
+          <p>Elena Marsh is an architecture and interiors writer based in Copenhagen. She has contributed to <em>Dwell</em>, <em>Dezeen</em>, and <em>Architectural Digest</em>.</p>
+          <p class="editor-name">Elena Marsh, Editor-in-Chief</p>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>Topics</h4>
+          <ul class="popular-list">
+            <li><a href="#interiors">Interior Design</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#materials">Materials</a></li>
+            <li><a href="#lighting">Lighting</a></li>
+            <li><a href="#furniture">Furniture</a></li>
+            <li><a href="#guides">Practical Guides</a></li>
+            <li><a href="#sustainable">Sustainable Design</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>From the Archive</h4>
+          <ul class="popular-list">
+            <li><a href="#">The Return of the Courtyard House</a></li>
+            <li><a href="#">Lime Plaster: Walls That Breathe</a></li>
+            <li><a href="#">Kitchen Materials That Age Beautifully</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo" style="font-size: 1.5rem;">Gable House Theory <span>Journal</span></a>
+          <p>An independent editorial publication exploring interior design, architecture, and the art of living well.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#interiors">Interiors</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#materials">Materials</a></li>
+            <li><a href="#lighting">Lighting</a></li>
+            <li><a href="#guides">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Editorial Team</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Gable House Theory. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    (function() {
+      // ---------- FAQ TOGGLE ----------
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+          question.addEventListener('click', () => {
+            item.classList.toggle('open');
+          });
+        }
+      });
+
+      // ---------- CATEGORY FILTER ----------
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const articleGrid = document.getElementById('articleGrid');
+      const popularGrid = document.getElementById('popularGrid');
+      const allCards = document.querySelectorAll('#articleGrid .article-card, #popularGrid .article-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Active state
+          filterButtons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          const category = this.dataset.category;
+
+          // Filter main grid
+          const mainCards = articleGrid.querySelectorAll('.article-card');
+          mainCards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+
+          // Filter popular grid (it's supplementary)
+          const popCards = popularGrid.querySelectorAll('.article-card');
+          popCards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+
+          // Show no-results if both are empty
+          const visibleMain = articleGrid.querySelectorAll('.article-card:not(.hidden)').length;
+          const visiblePop = popularGrid.querySelectorAll('.article-card:not(.hidden)').length;
+          let noResults = document.querySelector('.no-results');
+          if (visibleMain === 0 && visiblePop === 0) {
+            if (!noResults) {
+              noResults = document.createElement('div');
+              noResults.className = 'no-results';
+              noResults.textContent = 'No articles found in this category.';
+              articleGrid.parentNode.insertBefore(noResults, articleGrid.nextSibling);
+            }
+          } else {
+            if (noResults) noResults.remove();
+          }
+        });
+      });
+
+      // ---------- SEARCH ----------
+      const searchInput = document.getElementById('searchInput');
+      searchInput.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+
+        // Reset category filter to "all" when searching
+        if (query.length > 0) {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          document.querySelector('.filter-btn[data-category="all"]').classList.add('active');
+        }
+
+        // Search all article cards
+        const allCardsNow = document.querySelectorAll('#articleGrid .article-card, #popularGrid .article-card');
+        let visibleCount = 0;
+
+        allCardsNow.forEach(card => {
+          const title = card.querySelector('h3')?.innerText.toLowerCase() || '';
+          const excerpt = card.querySelector('p')?.innerText.toLowerCase() || '';
+          const category = card.querySelector('.category-tag')?.innerText.toLowerCase() || '';
+          const meta = card.querySelector('.meta')?.innerText.toLowerCase() || '';
+
+          if (title.includes(query) || excerpt.includes(query) || category.includes(query) || meta.includes(query)) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        // Featured article also searched
+        const featured = document.getElementById('featured');
+        if (featured) {
+          const featuredTitle = featured.querySelector('h2')?.innerText.toLowerCase() || '';
+          const featuredExcerpt = featured.querySelector('.excerpt')?.innerText.toLowerCase() || '';
+          if (query.length > 0) {
+            if (featuredTitle.includes(query) || featuredExcerpt.includes(query)) {
+              featured.classList.remove('hidden');
+            } else {
+              featured.classList.add('hidden');
+            }
+          } else {
+            featured.classList.remove('hidden');
+          }
+        }
+
+        // No results message
+        let noResults = document.querySelector('.no-results');
+        if (visibleCount === 0 && query.length > 0) {
+          if (!noResults) {
+            noResults = document.createElement('div');
+            noResults.className = 'no-results';
+            noResults.textContent = 'No articles match your search.';
+            articleGrid.parentNode.insertBefore(noResults, articleGrid.nextSibling);
+          }
+        } else {
+          if (noResults) noResults.remove();
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

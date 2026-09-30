@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies Policy · Gable House Theory</title>
+  <meta name="description" content="Cookies Policy for Gable House Theory — how we use cookies, what types we set, and how you can control them.">
+  <meta name="author" content="Gable House Theory">
+  <link rel="canonical" href="https://www.gablehousetheory.com/cookies.html">
+  <!-- Fonts (same as privacy page) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES (identical to privacy page) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --bg-page: #faf9f7;
+      --bg-card: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #4a4a4a;
+      --text-muted: #737373;
+      --border-light: #e8e6e3;
+      --border-medium: #d6d3d0;
+      --accent: #9b7b5c;
+      --accent-soft: #f0ebe6;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.04);
+      --max-width: 1280px;
+      --content-width: 780px;
+      --gutter: 24px;
+      --radius: 4px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: #1a1a1a;
+    }
+
+    h1 { font-size: 2.6rem; font-weight: 600; }
+    h2 { font-size: 2rem; margin-bottom: 1.25rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    h4 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+
+    p { margin-bottom: 1.4rem; color: var(--text-secondary); }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    a:hover { color: var(--accent); }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    /* ---------- HEADER (exactly as privacy page) ---------- */
+    .site-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-light);
+      padding: 0.75rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1a1a1a;
+      display: flex;
+      align-items: baseline;
+      gap: 0.1rem;
+    }
+
+    .logo span {
+      font-size: 0.65rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-left: 0.3rem;
+      font-family: var(--font-sans);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--text-secondary);
+    }
+
+    .nav-links a {
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    .header-search {
+      position: relative;
+      min-width: 220px;
+    }
+    .header-search input {
+      width: 100%;
+      padding: 0.55rem 1rem 0.55rem 2.2rem;
+      border: 1px solid var(--border-medium);
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      background: var(--bg-page);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .header-search input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(155, 123, 92, 0.08);
+    }
+    .header-search::before {
+      content: "⌕";
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1rem;
+      pointer-events: none;
+    }
+
+    /* ---------- PAGE TITLE & CONTENT ---------- */
+    .page-header {
+      padding: 3.5rem 0 1.5rem;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 2.5rem;
+    }
+    .page-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .page-header .subhead {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      max-width: 700px;
+    }
+
+    /* Cookies content wrapper – identical to privacy-content */
+    .cookies-content {
+      max-width: var(--content-width);
+      margin: 0 auto 3rem;
+    }
+
+    .cookies-content h2 {
+      font-size: 1.8rem;
+      margin-top: 2.8rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .cookies-content h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+
+    .cookies-content h3 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-family: var(--font-serif);
+      font-weight: 500;
+    }
+
+    .cookies-content p {
+      font-size: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .cookies-content ul, .cookies-content ol {
+      margin: 0 0 1.8rem 1.8rem;
+      color: var(--text-secondary);
+    }
+    .cookies-content li {
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+    }
+
+    .cookies-content strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .cookies-content .highlight-box {
+      background: var(--bg-card);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem 1.8rem;
+      margin: 2rem 0;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .cookies-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cookies-content .meta-updated {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+
+    .cookies-content hr {
+      border: none;
+      border-top: 1px solid var(--border-light);
+      margin: 2.5rem 0;
+    }
+
+    /* Table for cookie details (optional enhancement) */
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0 2rem;
+      font-size: 0.95rem;
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .cookie-table th,
+    .cookie-table td {
+      padding: 0.9rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .cookie-table th {
+      background: var(--accent-soft);
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .cookie-table tr:last-child td {
+      border-bottom: none;
+    }
+    .cookie-table td {
+      color: var(--text-secondary);
+    }
+    .cookie-table code {
+      background: #f0efed;
+      padding: 0.1rem 0.3rem;
+      border-radius: 3px;
+      font-size: 0.9rem;
+    }
+
+    /* ---------- FOOTER (identical) ---------- */
+    .site-footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-light);
+      padding: 3rem 0 2rem;
+      margin-top: 4rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 800px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 500px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      margin-top: 0.75rem;
+    }
+    .footer-col h4 {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.6rem; }
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border-light);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      h1 { font-size: 2rem; }
+      .page-header h1 { font-size: 2.2rem; }
+      .cookies-content h2 { font-size: 1.6rem; }
+      .cookie-table { font-size: 0.85rem; }
+      .cookie-table th, .cookie-table td { padding: 0.6rem 0.75rem; }
+    }
+    @media (max-width: 700px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+      .header-search { min-width: 100%; }
+      .cookies-content .highlight-box { padding: 1.2rem; }
+      .cookie-table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER (same as privacy) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Gable House Theory home">
+        Gable House Theory <span>Journal</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN COOKIES CONTENT -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Cookies Policy</h1>
+        <div class="subhead">How we use cookies and similar technologies on Gable House Theory.</div>
+        <div class="meta-updated">Last updated: 1 March 2025</div>
+      </div>
+
+      <!-- Cookies text -->
+      <div class="cookies-content">
+        <p><strong>Gable House Theory</strong> ("we", "us", "our") uses cookies and similar technologies to improve your browsing experience, analyse site traffic, and understand where our readers come from. This Cookies Policy explains what cookies are, which ones we use, and how you can manage them.</p>
+
+        <div class="highlight-box">
+          <p><strong>Summary:</strong> We use a minimal set of cookies — mostly for anonymous analytics and remembering your preferences. You can disable cookies in your browser at any time, though some parts of the site may not work as intended.</p>
+        </div>
+
+        <h2>1. What are cookies?</h2>
+        <p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the site owners. Cookies do not typically contain any information that personally identifies you, but personal information that we store about you may be linked to the information stored in and obtained from cookies.</p>
+
+        <h2>2. How we use cookies</h2>
+        <p>We use cookies for the following purposes:</p>
+        <ul>
+          <li><strong>Essential cookies:</strong> These are necessary for the website to function properly. They enable core functionality such as security, network management, and accessibility. You cannot opt out of these without affecting site performance.</li>
+          <li><strong>Analytics cookies:</strong> We use these to collect anonymous information about how visitors use our site — such as which pages are visited most often and if users encounter error messages. This helps us improve the journal’s content and navigation.</li>
+          <li><strong>Preference cookies:</strong> These remember your settings and choices (e.g., language or region) to provide a more personalised experience.</li>
+          <li><strong>Marketing cookies (rare):</strong> On occasion, we may embed content from third parties (e.g., Instagram or Pinterest) that sets cookies. We do not control these third-party cookies — please check the respective platforms’ policies.</li>
+        </ul>
+
+        <h2>3. Specific cookies we set</h2>
+        <p>Below is a list of the main cookies we use and their purpose. We keep our cookie usage minimal and privacy-focused.</p>
+        <table class="cookie-table">
+          <thead>
+            <tr>
+              <th>Cookie name</th>
+              <th>Type</th>
+              <th>Purpose</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>gh_session</code></td>
+              <td>Essential</td>
+              <td>Preserves your session state while navigating the site.</td>
+              <td>Session</td>
+            </tr>
+            <tr>
+              <td><code>gh_prefs</code></td>
+              <td>Preference</td>
+              <td>Stores your display preferences (e.g., font size).</td>
+              <td>1 year</td>
+            </tr>
+            <tr>
+              <td><code>_ga</code></td>
+              <td>Analytics</td>
+              <td>Used by Google Analytics to distinguish unique users (anonymous).</td>
+              <td>2 years</td>
+            </tr>
+            <tr>
+              <td><code>_gid</code></td>
+              <td>Analytics</td>
+              <td>Used by Google Analytics to distinguish users (anonymous).</td>
+              <td>24 hours</td>
+            </tr>
+            <tr>
+              <td><code>cookie_consent</code></td>
+              <td>Essential</td>
+              <td>Records whether you have accepted the cookie notice.</td>
+              <td>1 year</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:-0.5rem;"><em>Note: This list is illustrative. We do not use any advertising or tracking cookies beyond the anonymous analytics mentioned above.</em></p>
+
+        <h2>4. Third-party cookies</h2>
+        <p>Some pages may include embedded content from third parties (for example, a Pinterest save button or an embedded Instagram post). These services may set their own cookies, which we do not control. We recommend reviewing the privacy and cookie policies of these platforms if you have concerns.</p>
+
+        <h2>5. Your cookie choices</h2>
+        <p>You can control and manage cookies in several ways:</p>
+        <ul>
+          <li><strong>Browser settings:</strong> Most browsers allow you to refuse or accept cookies, delete existing cookies, and set preferences for specific sites. Check your browser’s help section for instructions.</li>
+          <li><strong>Opt-out tools:</strong> For Google Analytics, you can install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</li>
+          <li><strong>Our consent notice:</strong> When you first visit our site, you’ll see a brief notice about cookie usage. By continuing to browse, you consent to our use of cookies as described here. You can withdraw consent at any time by clearing cookies in your browser.</li>
+        </ul>
+        <p>Please note that disabling cookies may affect the functionality of this and many other websites you visit.</p>
+
+        <h2>6. Changes to this Cookies Policy</h2>
+        <p>We may update this policy from time to time to reflect changes in technology, legislation, or our practices. The latest version will always be posted on this page, with the “last updated” date at the top. We encourage you to check back periodically.</p>
+
+        <h2>7. Contact us</h2>
+        <p>If you have any questions about our use of cookies or this policy, please contact us:</p>
+        <p><strong>Gable House Theory</strong><br>
+        Bredgade 68, 2nd floor<br>
+        1260 Copenhagen K, Denmark<br>
+        Email: <a href="mailto:privacy@gablehousetheory.com">privacy@gablehousetheory.com</a></p>
+
+        <hr>
+
+        <p style="font-size:0.95rem; color:var(--text-muted);"><em>This policy is provided for general information and does not constitute legal advice. For specific concerns, please consult a qualified professional.</em></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER (same as privacy) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="font-size: 1.5rem;">Gable House Theory <span>Journal</span></a>
+          <p>An independent editorial publication exploring interior design, architecture, and the art of living well.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#interiors">Interiors</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#guides">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Editorial Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Gable House Theory. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- minimal script: search not functional on this page, but kept for consistency -->
+  <script>
+    document.getElementById('searchInput')?.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        alert('Search is available on the home page. (Demo)');
+      }
+    });
+  </script>
+</body>
+</html>

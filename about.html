@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Gable House Theory · Interior Design & Architecture Journal</title>
+  <meta name="description" content="About Gable House Theory — an independent editorial publication exploring interior design, architecture, materials, and the art of living well.">
+  <meta name="author" content="Gable House Theory">
+  <link rel="canonical" href="https://www.gablehousetheory.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About · Gable House Theory">
+  <meta property="og:description" content="Independent editorial on interior design, architecture, materials, and the art of living well.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.gablehousetheory.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Gable House Theory",
+    "description": "An independent interior design and architecture publication.",
+    "url": "https://www.gablehousetheory.com/about.html",
+    "author": {
+      "@type": "Organization",
+      "name": "Gable House Theory"
+    }
+  }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --bg-page: #faf9f7;
+      --bg-card: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #4a4a4a;
+      --text-muted: #737373;
+      --border-light: #e8e6e3;
+      --border-medium: #d6d3d0;
+      --accent: #9b7b5c;
+      --accent-soft: #f0ebe6;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.04);
+      --max-width: 1280px;
+      --content-width: 780px;
+      --gutter: 24px;
+      --radius: 4px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: #1a1a1a;
+    }
+
+    h1 { font-size: 2.6rem; font-weight: 600; }
+    h2 { font-size: 2rem; margin-bottom: 1.25rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    h4 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+
+    p {
+      margin-bottom: 1.4rem;
+      color: var(--text-secondary);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---------- UTILITY ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-light);
+      padding: 0.75rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1a1a1a;
+      display: flex;
+      align-items: baseline;
+      gap: 0.1rem;
+    }
+
+    .logo span {
+      font-size: 0.65rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-left: 0.3rem;
+      font-family: var(--font-sans);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--text-secondary);
+    }
+
+    .nav-links a {
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    .header-search {
+      position: relative;
+      min-width: 220px;
+    }
+
+    .header-search input {
+      width: 100%;
+      padding: 0.55rem 1rem 0.55rem 2.2rem;
+      border: 1px solid var(--border-medium);
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      background: var(--bg-page);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .header-search input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(155, 123, 92, 0.08);
+    }
+
+    .header-search::before {
+      content: "⌕";
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1rem;
+      pointer-events: none;
+    }
+
+    /* ---------- MAIN LAYOUT ---------- */
+    .site-main {
+      padding: 2.5rem 0 3rem;
+    }
+
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ---------- ABOUT HERO ---------- */
+    .about-hero {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 2.8rem 2.5rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .about-hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .about-hero .subhead {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .about-hero .rule {
+      width: 60px;
+      height: 2px;
+      background: var(--accent);
+      margin: 1.8rem auto 0;
+    }
+
+    /* ---------- ABOUT CONTENT ---------- */
+    .about-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 2.5rem 2.5rem 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .about-content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-content h3 {
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-content p {
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .about-content .lead {
+      font-size: 1.15rem;
+      color: var(--text-primary);
+      font-weight: 400;
+      font-family: var(--font-serif);
+      line-height: 1.6;
+    }
+
+    .about-content blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 1.8rem 0;
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+
+    .about-content blockquote cite {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-style: normal;
+      color: var(--text-muted);
+      margin-top: 0.6rem;
+    }
+
+    /* ---------- TEAM / VALUES ---------- */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.8rem;
+      margin: 2.5rem 0;
+    }
+
+    .value-item {
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.4rem;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+
+    .value-item:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-medium);
+    }
+
+    .value-item .value-num {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .value-item h4 {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .value-item p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* ---------- EDITOR BIO ---------- */
+    .editor-bio {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      margin: 2rem 0 1rem;
+      background: var(--accent-soft);
+      padding: 2rem 2rem;
+      border-radius: var(--radius);
+    }
+
+    .editor-bio img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 3px solid white;
+      box-shadow: var(--shadow-md);
+    }
+
+    .editor-bio .bio-text {
+      flex: 1;
+    }
+
+    .editor-bio .bio-text h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .editor-bio .bio-text p {
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .editor-bio .bio-text .bio-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      .editor-bio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    /* ---------- SIDEBAR (reused from home) ---------- */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .sidebar-widget {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 1.6rem 1.5rem;
+    }
+
+    .sidebar-widget h4 {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .popular-list {
+      list-style: none;
+    }
+
+    .popular-list li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .popular-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .popular-list .index-num {
+      display: inline-block;
+      width: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 0.8rem;
+    }
+
+    .popular-list a {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .popular-list a:hover {
+      color: var(--text-primary);
+    }
+
+    .about-editor p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .about-editor .editor-name {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 0.5rem;
+    }
+
+    /* ---------- NEWSLETTER ---------- */
+    .newsletter {
+      background: var(--accent-soft);
+      border-radius: var(--radius);
+      padding: 2.5rem 2.2rem;
+      margin: 2.5rem 0 0;
+      text-align: center;
+    }
+
+    .newsletter h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .newsletter p {
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-form input {
+      padding: 0.75rem 1.2rem;
+      border: 1px solid var(--border-medium);
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      width: 280px;
+      background: white;
+    }
+
+    .newsletter-form input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.8rem;
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .btn:hover {
+      background: #7a5e44;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-light);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      margin-top: 0.75rem;
+    }
+
+    .footer-col h4 {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-light);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 900px) {
+      h1 { font-size: 2rem; }
+      .about-hero h1 { font-size: 2rem; }
+      .about-hero { padding: 2rem 1.5rem; }
+      .about-content { padding: 2rem 1.5rem; }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+      .header-search {
+        min-width: 100%;
+      }
+      .about-hero h1 { font-size: 1.8rem; }
+      .about-hero .subhead { font-size: 1rem; }
+    }
+
+    /* ---------- MISC ---------- */
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Gable House Theory home">
+        Gable House Theory <span>Journal</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="site-main">
+    <div class="container layout-grid">
+
+      <!-- PRIMARY CONTENT -->
+      <div class="primary-content">
+
+        <!-- ABOUT HERO -->
+        <div class="about-hero">
+          <h1>About Gable House Theory</h1>
+          <p class="subhead">An independent editorial journal exploring interior design, architecture, materials, and the art of living well.</p>
+          <div class="rule"></div>
+        </div>
+
+        <!-- ABOUT CONTENT -->
+        <div class="about-content">
+          <p class="lead">We believe that good design is not about decoration — it is about how space, light, and material come together to shape the way we live.</p>
+
+          <p>Gable House Theory was founded in 2022 as a counterpoint to the fast-paced, trend-driven world of design media. Our aim is simple: to publish thoughtful, long-form journalism that treats interior design and architecture as cultural practices worthy of serious attention.</p>
+
+          <p>We are independent, reader-supported, and editorially driven. Every article is written by our small team of contributing editors and industry experts, and every recommendation is made without paid influence. We take pride in the depth of our research and the clarity of our writing.</p>
+
+          <blockquote>
+            “The best interiors are not the ones that shout the loudest, but the ones that quietly support the people who live in them.”
+            <cite>— Elena Marsh, Editor-in-Chief</cite>
+          </blockquote>
+
+          <h2>What We Cover</h2>
+          <p>Our editorial scope spans residential and commercial interiors, architectural theory and practice, material innovation, lighting design, furniture, and practical guides for homeowners and design professionals. We are particularly interested in the intersection of sustainability and craft — how we can build and furnish our homes with greater care for the environment and for future generations.</p>
+
+          <h3>Our Values</h3>
+          <div class="values-grid">
+            <div class="value-item">
+              <span class="value-num">01</span>
+              <h4>Independence</h4>
+              <p>We are not beholden to advertisers or brands. Our editorial decisions are made solely in the interest of our readers.</p>
+            </div>
+            <div class="value-item">
+              <span class="value-num">02</span>
+              <h4>Depth</h4>
+              <p>We favour substance over clickbait. Our articles are researched, considered, and built to last.</p>
+            </div>
+            <div class="value-item">
+              <span class="value-num">03</span>
+              <h4>Craft</h4>
+              <p>We celebrate the makers, materials, and details that elevate a space from ordinary to enduring.</p>
+            </div>
+            <div class="value-item">
+              <span class="value-num">04</span>
+              <h4>Sustainability</h4>
+              <p>We champion design that respects the planet — from passive principles to reclaimed materials.</p>
+            </div>
+          </div>
+
+          <h2>Editorial Team</h2>
+          <div class="editor-bio">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" alt="Portrait of Elena Marsh, Editor-in-Chief">
+            <div class="bio-text">
+              <h3>Elena Marsh</h3>
+              <p class="bio-meta">Editor-in-Chief · Copenhagen</p>
+              <p>Elena is an architecture and interiors writer with over a decade of experience. She has contributed to <em>Dwell</em>, <em>Dezeen</em>, and <em>Architectural Digest</em>, and is the author of two books on Nordic design. She holds a Master's in Architecture from the Royal Danish Academy.</p>
+              <p>At Gable House Theory, Elena oversees editorial strategy, commissions features, and writes on topics ranging from material innovation to the psychology of space.</p>
+            </div>
+          </div>
+
+          <div class="editor-bio" style="background: #f5f0eb;">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop" alt="Portrait of James Liu, Senior Editor">
+            <div class="bio-text">
+              <h3>James Liu</h3>
+              <p class="bio-meta">Senior Editor · London</p>
+              <p>James is a former practising architect who now writes full-time on architecture and urbanism. He is particularly interested in adaptive reuse, public space, and the social impact of design. He joined Gable House Theory in 2023.</p>
+              <p>James edits our architecture and sustainable design sections and has a keen eye for the technical details that make buildings work.</p>
+            </div>
+          </div>
+
+          <p style="margin-top: 1.5rem; font-style: italic; color: var(--text-muted); font-size: 0.95rem;">We also work with a network of freelance contributors across Europe, North America, and Asia. If you have a story to pitch, please visit our <a href="contact.html" style="color: var(--accent); text-decoration: underline;">contact page</a>.</p>
+        </div>
+
+        <!-- NEWSLETTER (about page variant) -->
+        <div class="newsletter">
+          <h3>Stay in the loop</h3>
+          <p>Receive our weekly digest of new articles, design insights, and reading recommendations.</p>
+          <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Thank you for subscribing. (Demo only)');">
+            <input type="email" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-label="Sidebar">
+        <div class="sidebar-widget">
+          <h4>Most Read</h4>
+          <ul class="popular-list">
+            <li><span class="index-num">01</span> <a href="#">The Quiet Power of Negative Space</a></li>
+            <li><span class="index-num">02</span> <a href="#">Facade as Filter: Rethinking Street Presence</a></li>
+            <li><span class="index-num">03</span> <a href="#">Layered Lighting: A Room-by-Room Guide</a></li>
+            <li><span class="index-num">04</span> <a href="#">Small Space, Big Ideas: A Practical Guide</a></li>
+            <li><span class="index-num">05</span> <a href="#">Travertine, Reconsidered</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget about-editor">
+          <h4>Our Mission</h4>
+          <p>Gable House Theory exists to raise the standard of design writing — to inform, provoke, and inspire both professionals and enthusiasts.</p>
+          <p class="editor-name">Independent since 2022</p>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>Topics</h4>
+          <ul class="popular-list">
+            <li><a href="#interiors">Interior Design</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#materials">Materials</a></li>
+            <li><a href="#lighting">Lighting</a></li>
+            <li><a href="#furniture">Furniture</a></li>
+            <li><a href="#guides">Practical Guides</a></li>
+            <li><a href="#sustainable">Sustainable Design</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>From the Archive</h4>
+          <ul class="popular-list">
+            <li><a href="#">The Return of the Courtyard House</a></li>
+            <li><a href="#">Lime Plaster: Walls That Breathe</a></li>
+            <li><a href="#">Kitchen Materials That Age Beautifully</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="font-size: 1.5rem;">Gable House Theory <span>Journal</span></a>
+          <p>An independent editorial publication exploring interior design, architecture, and the art of living well.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#interiors">Interiors</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#materials">Materials</a></li>
+            <li><a href="#lighting">Lighting</a></li>
+            <li><a href="#guides">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="#">Editorial Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Gable House Theory. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT (minimal for demo) -->
+  <script>
+    (function() {
+      // ---------- NEWSLETTER DEMO ----------
+      const newsletterForm = document.getElementById('newsletterForm');
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for subscribing. (Demo only)');
+          this.reset();
+        });
+      }
+
+      // ---------- SEARCH (just a visual demo, no active filtering on about page) ----------
+      const searchInput = document.getElementById('searchInput');
+      if (searchInput) {
+        searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            alert('Search is available on the home page. (Demo only)');
+          }
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>

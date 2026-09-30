@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Gable House Theory</title>
+  <meta name="description" content="Contact Gable House Theory — editorial inquiries, submissions, and general correspondence for our interior design and architecture journal.">
+  <meta name="author" content="Gable House Theory">
+  <link rel="canonical" href="https://www.gablehousetheory.com/contact.html">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES (unchanged) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --bg-page: #faf9f7;
+      --bg-card: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #4a4a4a;
+      --text-muted: #737373;
+      --border-light: #e8e6e3;
+      --border-medium: #d6d3d0;
+      --accent: #9b7b5c;
+      --accent-soft: #f0ebe6;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.04);
+      --max-width: 1280px;
+      --content-width: 780px;
+      --gutter: 24px;
+      --radius: 4px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: #1a1a1a;
+    }
+
+    h1 { font-size: 2.6rem; font-weight: 600; }
+    h2 { font-size: 2rem; margin-bottom: 1.25rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    h4 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+
+    p { margin-bottom: 1.4rem; color: var(--text-secondary); }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    a:hover { color: var(--accent); }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    /* ---------- HEADER (exactly as before) ---------- */
+    .site-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-light);
+      padding: 0.75rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1a1a1a;
+      display: flex;
+      align-items: baseline;
+      gap: 0.1rem;
+    }
+
+    .logo span {
+      font-size: 0.65rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-left: 0.3rem;
+      font-family: var(--font-sans);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--text-secondary);
+    }
+
+    .nav-links a {
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    .header-search {
+      position: relative;
+      min-width: 220px;
+    }
+    .header-search input {
+      width: 100%;
+      padding: 0.55rem 1rem 0.55rem 2.2rem;
+      border: 1px solid var(--border-medium);
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      background: var(--bg-page);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .header-search input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(155, 123, 92, 0.08);
+    }
+    .header-search::before {
+      content: "⌕";
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1rem;
+      pointer-events: none;
+    }
+
+    /* ---------- PAGE TITLE ---------- */
+    .page-header {
+      padding: 3.5rem 0 1.5rem;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 2.5rem;
+    }
+    .page-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .page-header .subhead {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      max-width: 600px;
+    }
+
+    /* ---------- CONTACT GRID ---------- */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem 4rem;
+      align-items: start;
+    }
+    @media (max-width: 800px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    .contact-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .contact-info p {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+    .contact-details {
+      list-style: none;
+      margin-top: 2rem;
+    }
+    .contact-details li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+    .contact-details li:last-child {
+      border-bottom: none;
+    }
+    .contact-details .icon {
+      font-size: 1.2rem;
+      min-width: 1.5rem;
+      color: var(--accent);
+    }
+    .contact-details strong {
+      display: block;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.2rem;
+    }
+
+    /* ---------- FORM ---------- */
+    .contact-form-wrapper {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 2.2rem 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-form-wrapper h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact-form-wrapper .form-note {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.8rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.4rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--text-primary);
+      margin-bottom: 0.4rem;
+      font-family: var(--font-sans);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      background: var(--bg-page);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(155, 123, 92, 0.08);
+    }
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%234a4a4a' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 10px;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.8rem 2.2rem;
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    .btn:hover {
+      background: #7a5e44;
+    }
+
+    /* ---------- FOOTER (exactly as before) ---------- */
+    .site-footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-light);
+      padding: 3rem 0 2rem;
+      margin-top: 4rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 800px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 500px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      margin-top: 0.75rem;
+    }
+    .footer-col h4 {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.6rem; }
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border-light);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      h1 { font-size: 2rem; }
+      .page-header h1 { font-size: 2.2rem; }
+    }
+    @media (max-width: 700px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+      .header-search { min-width: 100%; }
+      .contact-form-wrapper { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER (same as home) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Gable House Theory home">
+        Gable House Theory <span>Journal</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTACT CONTENT -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Contact</h1>
+        <div class="subhead">We welcome thoughtful inquiries, editorial pitches, and conversations about design.</div>
+      </div>
+
+      <!-- Contact Grid -->
+      <div class="contact-grid">
+        <!-- Left: Info & details -->
+        <div class="contact-info">
+          <h2>Let’s talk</h2>
+          <p>Whether you’re an architect, designer, writer, or simply someone who loves considered spaces, we’d love to hear from you. We read every message and aim to respond within two working days.</p>
+          <p>For editorial submissions, please include a short synopsis and relevant imagery or links. We’re especially interested in in-depth, original perspectives on interiors, materials, and sustainable design.</p>
+
+          <ul class="contact-details">
+            <li>
+              <span class="icon">✉</span>
+              <div>
+                <strong>Editorial & general</strong>
+                <a href="mailto:hello@gablehousetheory.com">hello@gablehousetheory.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="icon">✎</span>
+              <div>
+                <strong>Submissions</strong>
+                <a href="mailto:pitch@gablehousetheory.com">pitch@gablehousetheory.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="icon">☎</span>
+              <div>
+                <strong>Phone</strong>
+                <span>+45 32 96 14 78</span>
+                <br><span style="font-size:0.85rem; color:var(--text-muted);">Mon–Fri, 9am–5pm CET</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon">⌂</span>
+              <div>
+                <strong>Studio</strong>
+                <span>Gable House Theory<br>Bredgade 68, 2nd floor<br>1260 Copenhagen K, Denmark</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrapper">
+          <h3>Send a message</h3>
+          <p class="form-note">All fields are required. We’ll never share your details.</p>
+
+          <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you — your message has been sent. (Demo only)');">
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Elena Marsh" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="general">General inquiry</option>
+                <option value="editorial">Editorial / press</option>
+                <option value="submission">Article submission</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project, idea, or question…" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER (same as home) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="font-size: 1.5rem;">Gable House Theory <span>Journal</span></a>
+          <p>An independent editorial publication exploring interior design, architecture, and the art of living well.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#interiors">Interiors</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#guides">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Editorial Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Gable House Theory. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- minimal script: search not functional on this page, but kept for consistency -->
+  <script>
+    // Search input placeholder — no actual filtering on contact page
+    document.getElementById('searchInput')?.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        alert('Search is available on the home page. (Demo)');
+      }
+    });
+  </script>
+</body>
+</html>

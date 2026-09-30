@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer · Gable House Theory</title>
+  <meta name="description" content="Disclaimer for Gable House Theory — terms of use, limitations of liability, and content accuracy.">
+  <meta name="author" content="Gable House Theory">
+  <link rel="canonical" href="https://www.gablehousetheory.com/disclaimer.html">
+  <!-- Fonts (same as privacy/cookies pages) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES (identical to privacy/cookies pages) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --bg-page: #faf9f7;
+      --bg-card: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #4a4a4a;
+      --text-muted: #737373;
+      --border-light: #e8e6e3;
+      --border-medium: #d6d3d0;
+      --accent: #9b7b5c;
+      --accent-soft: #f0ebe6;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.04);
+      --max-width: 1280px;
+      --content-width: 780px;
+      --gutter: 24px;
+      --radius: 4px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: #1a1a1a;
+    }
+
+    h1 { font-size: 2.6rem; font-weight: 600; }
+    h2 { font-size: 2rem; margin-bottom: 1.25rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    h4 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+
+    p { margin-bottom: 1.4rem; color: var(--text-secondary); }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    a:hover { color: var(--accent); }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    /* ---------- HEADER (exactly as privacy/cookies) ---------- */
+    .site-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-light);
+      padding: 0.75rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1a1a1a;
+      display: flex;
+      align-items: baseline;
+      gap: 0.1rem;
+    }
+
+    .logo span {
+      font-size: 0.65rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-left: 0.3rem;
+      font-family: var(--font-sans);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--text-secondary);
+    }
+
+    .nav-links a {
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    .header-search {
+      position: relative;
+      min-width: 220px;
+    }
+    .header-search input {
+      width: 100%;
+      padding: 0.55rem 1rem 0.55rem 2.2rem;
+      border: 1px solid var(--border-medium);
+      border-radius: 30px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      background: var(--bg-page);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .header-search input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(155, 123, 92, 0.08);
+    }
+    .header-search::before {
+      content: "⌕";
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1rem;
+      pointer-events: none;
+    }
+
+    /* ---------- PAGE TITLE & CONTENT ---------- */
+    .page-header {
+      padding: 3.5rem 0 1.5rem;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 2.5rem;
+    }
+    .page-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .page-header .subhead {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      max-width: 700px;
+    }
+
+    /* Disclaimer content wrapper – identical to privacy/cookies content */
+    .disclaimer-content {
+      max-width: var(--content-width);
+      margin: 0 auto 3rem;
+    }
+
+    .disclaimer-content h2 {
+      font-size: 1.8rem;
+      margin-top: 2.8rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .disclaimer-content h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+
+    .disclaimer-content h3 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-family: var(--font-serif);
+      font-weight: 500;
+    }
+
+    .disclaimer-content p {
+      font-size: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .disclaimer-content ul, .disclaimer-content ol {
+      margin: 0 0 1.8rem 1.8rem;
+      color: var(--text-secondary);
+    }
+    .disclaimer-content li {
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+    }
+
+    .disclaimer-content strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .disclaimer-content .highlight-box {
+      background: var(--bg-card);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem 1.8rem;
+      margin: 2rem 0;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .disclaimer-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .disclaimer-content .meta-updated {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+
+    .disclaimer-content hr {
+      border: none;
+      border-top: 1px solid var(--border-light);
+      margin: 2.5rem 0;
+    }
+
+    /* ---------- FOOTER (identical) ---------- */
+    .site-footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-light);
+      padding: 3rem 0 2rem;
+      margin-top: 4rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 800px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 500px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      margin-top: 0.75rem;
+    }
+    .footer-col h4 {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.6rem; }
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border-light);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      h1 { font-size: 2rem; }
+      .page-header h1 { font-size: 2.2rem; }
+      .disclaimer-content h2 { font-size: 1.6rem; }
+    }
+    @media (max-width: 700px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+      .header-search { min-width: 100%; }
+      .disclaimer-content .highlight-box { padding: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER (same as privacy/cookies) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Gable House Theory home">
+        Gable House Theory <span>Journal</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN DISCLAIMER CONTENT -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Disclaimer</h1>
+        <div class="subhead">Important information about the content and use of Gable House Theory.</div>
+        <div class="meta-updated">Last updated: 1 March 2025</div>
+      </div>
+
+      <!-- Disclaimer text -->
+      <div class="disclaimer-content">
+        <p><strong>Gable House Theory</strong> ("we", "us", "our") provides this website and its content for general informational and educational purposes only. By using this website, you acknowledge and agree to the terms outlined in this Disclaimer.</p>
+
+        <div class="highlight-box">
+          <p><strong>Please read carefully:</strong> The information on this website is not professional advice. Always consult a qualified professional before making decisions based on the content you read here.</p>
+        </div>
+
+        <h2>1. General information only</h2>
+        <p>The content published on Gable House Theory — including articles, guides, photographs, and opinions — is intended to inspire and inform. While we strive to keep information accurate and up to date, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the content.</p>
+        <p>Any reliance you place on such information is strictly at your own risk. We are not liable for any loss or damage arising from the use of this website.</p>
+
+        <h2>2. No professional advice</h2>
+        <p>Gable House Theory is an editorial publication focused on interior design, architecture, and lifestyle. We are not a licensed architecture firm, interior design consultancy, legal practice, or financial advisor. Nothing on this site constitutes professional advice — whether architectural, engineering, legal, financial, or otherwise.</p>
+        <p>If you require specific advice, please consult a qualified professional in the relevant field. Never disregard professional advice or delay seeking it because of something you have read on this website.</p>
+
+        <h2>3. External links disclaimer</h2>
+        <p>This website may contain links to external websites that are not provided or maintained by us. We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any link does not necessarily imply a recommendation or endorse the views expressed within them.</p>
+
+        <h2>4. Affiliate & advertising disclosure</h2>
+        <p>Some links on this site may be affiliate links. If you click on an affiliate link and make a purchase, we may receive a small commission at no extra cost to you. This helps support the running of the journal. We only recommend products or services that we genuinely believe may be of interest to our readers.</p>
+        <p>Any advertising or sponsored content will be clearly identified as such. We maintain editorial independence and do not allow advertisers to influence our editorial content.</p>
+
+        <h2>5. Accuracy of information</h2>
+        <p>We make every effort to ensure that the information on this website is correct at the time of publication. However, content may become outdated over time. We reserve the right to modify, update, or remove content without prior notice. We are under no obligation to update any information on our site.</p>
+
+        <h2>6. Limitation of liability</h2>
+        <p>To the fullest extent permitted by law, Gable House Theory and its contributors shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to, use of, or inability to use this website or any content therein. This includes, but is not limited to, damages for loss of profits, data, or other intangible losses.</p>
+
+        <h2>7. Copyright & intellectual property</h2>
+        <p>All content on this website — including text, images, logos, and design — is the property of Gable House Theory unless otherwise stated. You may not reproduce, distribute, or use our content without explicit written permission. Short excerpts with proper attribution and a link back to the original content are permitted for non-commercial purposes.</p>
+
+        <h2>8. Changes to this disclaimer</h2>
+        <p>We may update this Disclaimer from time to time. The latest version will always be posted on this page, with the “last updated” date at the top. Your continued use of the website after any changes constitutes acceptance of the revised terms.</p>
+
+        <h2>9. Contact</h2>
+        <p>If you have any questions about this Disclaimer, please contact us:</p>
+        <p><strong>Gable House Theory</strong><br>
+        Bredgade 68, 2nd floor<br>
+        1260 Copenhagen K, Denmark<br>
+        Email: <a href="mailto:legal@gablehousetheory.com">legal@gablehousetheory.com</a></p>
+
+        <hr>
+
+        <p style="font-size:0.95rem; color:var(--text-muted);"><em>This disclaimer is provided for general information and does not constitute legal advice. For specific concerns, please consult a qualified professional.</em></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER (same as privacy/cookies) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="font-size: 1.5rem;">Gable House Theory <span>Journal</span></a>
+          <p>An independent editorial publication exploring interior design, architecture, and the art of living well.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#interiors">Interiors</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#guides">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Editorial Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Gable House Theory. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- minimal script: search demo, same as other pages -->
+  <script>
+    document.getElementById('searchInput')?.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        alert('Search is available on the home page. (Demo)');
+      }
+    });
+  </script>
+</body>
+</html>
